@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saung The Last End | Cita Rasa Khas Lampung</title>
+  <meta name="description" content="Saung The Last End: ikan bakar, pindang, pepes, seruit, dan ayam kampung dengan cita rasa khas Lampung. Lihat menu lengkap dan pesan lewat WhatsApp.">
+  <meta name="theme-color" content="#0c2016">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230c2016'/%3E%3Cpath d='M20 6 34 20 20 34 6 20Z' fill='none' stroke='%23f4b942' stroke-width='2.5'/%3E%3Cpath d='M20 13 27 20 20 27 13 20Z' fill='%23f4b942'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#menu">Langsung ke daftar menu</a>
+
+  <!-- ===================== NAVIGASI ===================== -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#beranda" aria-label="Saung The Last End, kembali ke atas">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 3 37 20 20 37 3 20Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 11 29 20 20 29 11 20Z" fill="currentColor"/>
+      </svg>
+      <span class="brand-name">Saung The Last End</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#andalan">Andalan</a>
+      <a href="#menu">Menu</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#kontak">Kontak</a>
+      <a class="nav-wa-mobile" data-wa href="#">Pesan lewat WhatsApp</a>
+    </nav>
+
+    <a class="btn btn-wa nav-wa" data-wa href="#" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.3 2.8 2.7 5.3 5.8 6.2l1.4-1.6-2-1.1-1 .7c-.9-.4-1.6-1.1-2-2l.8-.9-1-2Z" fill="currentColor"/></svg>
+      WhatsApp
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="beranda" aria-labelledby="judul">
+      <svg class="hero-scene" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="cahayaJendela" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#ffcf6b" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#ffcf6b" stop-opacity="0"/>
+          </radialGradient>
+          <!-- satu helai daun bambu, dipakai berulang -->
+          <path id="daun" d="M0 0C22-11 62-15 98 0 62 11 22 9 0 0Z"/>
+        </defs>
+
+        <!-- bukit jauh -->
+        <path d="M0 430C180 380 320 440 520 400S860 350 1040 400 1300 430 1440 380V700H0Z" fill="#123524"/>
+        <!-- bukit tengah (sawah berundak) -->
+        <path d="M0 500C200 450 380 520 600 480S980 430 1200 490 1380 500 1440 470V700H0Z" fill="#0e2a1c"/>
+        <g fill="none" stroke="#f4b942" stroke-opacity=".13" stroke-width="2">
+          <path d="M0 530C200 482 380 552 600 512S980 462 1200 522 1380 532 1440 502"/>
+          <path d="M0 565C200 517 380 587 600 547S980 497 1200 557 1380 567 1440 537"/>
+          <path d="M0 602C200 554 380 624 600 584S980 534 1200 594 1380 604 1440 574"/>
+        </g>
+
+        <!-- saung kecil di kejauhan -->
+        <g class="saung" transform="translate(250 0)">
+          <ellipse cx="80" cy="425" rx="150" ry="70" fill="url(#cahayaJendela)" class="jendela"/>
+          <path d="M-22 394 80 320 182 394Z" fill="#07160e"/>
+          <rect x="0" y="392" width="160" height="62" fill="#07160e"/>
+          <rect x="26" y="408" width="32" height="28" fill="#ffcf6b" class="jendela"/>
+          <rect x="102" y="408" width="32" height="28" fill="#ffcf6b" class="jendela"/>
+          <path d="M-12 456H172" stroke="#07160e" stroke-width="8"/>
+          <path d="M8 456V504M44 456V504M116 456V504M152 456V504" stroke="#07160e" stroke-width="7"/>
+        </g>
+
+        <!-- rumpun bambu kiri -->
+        <g class="bambu bambu-kiri">
+          <path d="M44 700 52 90" stroke="#050f0a" stroke-width="15" stroke-linecap="round"/>
+          <path d="M104 700 98 170" stroke="#050f0a" stroke-width="12" stroke-linecap="round"/>
+          <path d="M-6 700-2 220" stroke="#050f0a" stroke-width="13" stroke-linecap="round"/>
+          <g stroke="#143a25" stroke-width="2" stroke-linecap="round">
+            <path d="M44 560H58M45 440H59M47 320H60M49 200H62"/>
+            <path d="M102 560H113M101 450H112M100 340H111M99 240H109"/>
+            <path d="M-5 580H7M-4 470H8M-3 360H9"/>
+          </g>
+          <g fill="#050f0a" class="daun-goyang">
+            <use href="#daun" transform="translate(52 100) rotate(-24)"/>
+            <use href="#daun" transform="translate(52 100) rotate(8) scale(.9)"/>
+            <use href="#daun" transform="translate(50 150) rotate(-52) scale(.8)"/>
+            <use href="#daun" transform="translate(52 128) rotate(32) scale(.85)"/>
+            <use href="#daun" transform="translate(98 180) rotate(-16) scale(.85)"/>
+            <use href="#daun" transform="translate(98 200) rotate(26) scale(.8)"/>
+            <use href="#daun" transform="translate(-2 230) rotate(-34) scale(.8)"/>
+            <use href="#daun" transform="translate(-2 252) rotate(14) scale(.75)"/>
+          </g>
+        </g>
+
+        <!-- rumpun bambu kanan -->
+        <g class="bambu bambu-kanan">
+          <path d="M1390 700 1384 130" stroke="#050f0a" stroke-width="15" stroke-linecap="round"/>
+          <path d="M1336 700 1342 250" stroke="#050f0a" stroke-width="12" stroke-linecap="round"/>
+          <path d="M1446 700 1440 300" stroke="#050f0a" stroke-width="13" stroke-linecap="round"/>
+          <g stroke="#143a25" stroke-width="2" stroke-linecap="round">
+            <path d="M1383 570H1397M1384 450H1398M1385 330H1399M1386 220H1400"/>
+            <path d="M1335 560H1346M1336 450H1347M1338 350H1349"/>
+          </g>
+          <g fill="#050f0a" class="daun-goyang">
+            <use href="#daun" transform="translate(1384 140) rotate(204) scale(.95)"/>
+            <use href="#daun" transform="translate(1384 140) rotate(172) scale(.9)"/>
+            <use href="#daun" transform="translate(1386 190) rotate(232) scale(.8)"/>
+            <use href="#daun" transform="translate(1386 168) rotate(150) scale(.85)"/>
+            <use href="#daun" transform="translate(1342 260) rotate(196) scale(.8)"/>
+            <use href="#daun" transform="translate(1342 282) rotate(158) scale(.75)"/>
+          </g>
+        </g>
+
+        <!-- tanah depan -->
+        <path d="M0 640C260 612 520 650 760 630S1200 606 1440 636V700H0Z" fill="#050f0a"/>
+      </svg>
+
+      <div class="hero-weave" aria-hidden="true"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+      <canvas class="fireflies" id="fireflies" aria-hidden="true"></canvas>
+
+      <!-- pelita gantung -->
+      <svg class="pelita" viewBox="0 0 80 240" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="nyalaPelita" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#ffe3a0" stop-opacity=".9"/>
+            <stop offset=".35" stop-color="#ffb93d" stop-opacity=".45"/>
+            <stop offset="1" stop-color="#ffb93d" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <g class="pelita-ayun">
+          <path d="M40 0V92" stroke="#c89a4a" stroke-width="2"/>
+          <circle class="pelita-nyala" cx="40" cy="146" r="70" fill="url(#nyalaPelita)"/>
+          <path d="M22 100H58L52 92H28Z" fill="#8a5a33"/>
+          <path d="M26 100H54L60 184H20Z" fill="#ffcf6b" fill-opacity=".92"/>
+          <path d="M40 100V184M26 100 20 184M54 100 60 184" stroke="#5a3a22" stroke-width="2"/>
+          <path d="M40 176C33 166 33 156 40 144 47 156 47 166 40 176Z" fill="#fff3d1"/>
+          <path d="M18 184H62L58 194H22Z" fill="#8a5a33"/>
+          <path d="M34 194 30 214M46 194 50 214M40 194V222" stroke="#c89a4a" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </svg>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="judul">
+            <span class="baris"><span>Saung</span></span>
+            <span class="baris"><span>The Last End</span></span>
+          </h1>
+          <p class="hero-tag">Cita Rasa Khas Lampung,<br>Nikmat Bersama Keluarga</p>
+          <div class="hero-cta">
+            <a class="btn btn-gold" href="#menu">Lihat menu</a>
+            <a class="btn btn-ghost" data-wa href="#" target="_blank" rel="noopener noreferrer">Pesan lewat WhatsApp</a>
+          </div>
+        </div>
+
+        <figure class="tampah">
+          <div class="tampah-cincin" aria-hidden="true"></div>
+          <img src="ikan-bakar.jpg" width="584" height="600" alt="Ikan bakar dengan sambal, lalapan, dan jeruk limau di atas tampah bambu">
+          <figcaption class="tampah-tag">
+            <span class="tag-nama">Paket Nila Bakar</span>
+            <span class="tag-harga">Rp32.000</span>
+            <span class="badge">Best seller</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="tumpal" aria-hidden="true"></div>
+
+    <!-- ===================== TENTANG ===================== -->
+    <section class="section tentang" id="tentang" aria-labelledby="judul-tentang">
+      <div class="wrap tentang-grid">
+        <div class="tentang-teks">
+          <h2 id="judul-tentang">Hidangan ikan khas Lampung untuk dinikmati bersama keluarga</h2>
+          <p>Saung The Last End menyajikan ikan air tawar dan ayam kampung dalam cara masak yang akrab di meja makan Lampung: dibakar, digoreng, dipindang, dipepes, dikukus, atau diasam manis.</p>
+          <p>Seruit, hidangan khas Lampung dengan ikan dan sambalnya, menjadi paket andalan. Datang ramai-ramai? Ada Paket Hemat Berdua dan Paket Hemat Berempat.</p>
+        </div>
+
+        <div class="ikan">
+          <h3 class="ikan-judul">Lihat menu per jenis</h3>
+          <ul class="ikan-list">
+            <li><button type="button" data-tipe="makanan" data-grup="Paket"><span class="ikan-nama">Paket</span><span class="ikan-cara">seruit, nila bakar, hemat berdua, hemat berempat</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Nila"><span class="ikan-nama">Nila</span><span class="ikan-cara">bakar, goreng, pekhos pati</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Lele"><span class="ikan-nama">Lele</span><span class="ikan-cara">bakar, goreng</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Baung"><span class="ikan-nama">Baung</span><span class="ikan-cara">pindang, goreng, pepes</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Jelabat"><span class="ikan-nama">Jelabat</span><span class="ikan-cara">pindang, pepes, steam</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Gurame"><span class="ikan-nama">Gurame</span><span class="ikan-cara">bakar, goreng, asam manis</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Patin"><span class="ikan-nama">Patin</span><span class="ikan-cara">bakar</span></button></li>
+            <li><button type="button" data-tipe="makanan" data-grup="Ayam Kampung"><span class="ikan-nama">Ayam kampung</span><span class="ikan-cara">goreng, bakar, semur</span></button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANDALAN ===================== -->
+    <section class="section andalan" id="andalan" aria-labelledby="judul-andalan">
+      <div class="wrap">
+        <div class="andalan-kepala">
+          <h2 id="judul-andalan">Menu andalan</h2>
+          <p>Empat menu yang bertanda best seller di daftar kami.</p>
+        </div>
+        <div class="papan-row" id="andalanList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="section menu" id="menu" aria-labelledby="judul-menu">
+      <div class="wrap menu-grid">
+        <aside class="menu-samping">
+          <h2 id="judul-menu">Daftar menu</h2>
+          <p>Harga dalam rupiah. Tambahkan menu ke pesanan, lalu kirim lewat WhatsApp.</p>
+
+          <div class="tabs" role="tablist" aria-label="Kategori menu">
+            <button class="tab" role="tab" type="button" id="tab-makanan" data-tab="makanan" aria-selected="true" aria-controls="menuPanel">Makanan</button>
+            <button class="tab" role="tab" type="button" id="tab-minuman" data-tab="minuman" aria-selected="false" aria-controls="menuPanel" tabindex="-1">Minuman</button>
+          </div>
+
+          <figure class="menu-foto">
+            <img class="is-on" data-untuk="makanan" src="ikan-bakar.jpg" width="584" height="600" loading="lazy" alt="Ikan bakar dengan sambal dan lalapan">
+            <img data-untuk="minuman" src="es-teh.jpg" width="450" height="500" loading="lazy" alt="Segelas es teh dengan daun pandan di atas alas kayu">
+          </figure>
+        </aside>
+
+        <div class="bingkai">
+          <div class="bingkai-isi">
+            <div class="menu-alat">
+              <label class="cari">
+                <span class="sr-only">Cari menu</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <input type="search" id="cari" placeholder="Cari menu, misalnya gurame" autocomplete="off">
+              </label>
+              <div class="chips" id="chips" role="group" aria-label="Filter jenis menu"></div>
+            </div>
+
+            <div id="menuPanel" role="tabpanel" aria-labelledby="tab-makanan" tabindex="0">
+              <ul class="menu-list" id="menuList"></ul>
+              <div class="kosong" id="menuKosong" hidden>
+                <p class="kosong-judul">Menu tidak ditemukan</p>
+                <p>Coba kata kunci lain, atau tampilkan semua menu.</p>
+                <button class="btn btn-garis" type="button" id="resetCari">Tampilkan semua menu</button>
+              </div>
+            </div>
+            <noscript><p class="kosong">Aktifkan JavaScript di browser untuk melihat daftar menu.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOKASI ===================== -->
+    <section class="section lokasi" id="lokasi" aria-labelledby="judul-lokasi">
+      <div class="wrap lokasi-grid">
+        <div class="lokasi-teks">
+          <h2 id="judul-lokasi">Temukan saung kami</h2>
+          <p class="alamat" id="alamat" hidden></p>
+          <p>Buka lokasi di Google Maps untuk melihat rute dari tempat Anda.</p>
+          <a class="btn btn-hijau" data-maps href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+            Buka di Google Maps
+          </a>
+        </div>
+
+        <a class="peta" data-maps href="#" target="_blank" rel="noopener noreferrer" aria-label="Buka lokasi Saung The Last End di Google Maps">
+          <div class="peta-bingkai"><div class="peta-isi">
+            <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+              <rect width="480" height="360" fill="#12301f"/>
+              <path d="M-10 70C80 40 150 80 230 50S400 10 500 40V-10H-10Z" fill="#1b4429"/>
+              <path d="M330 400C350 330 410 320 500 300V400Z" fill="#1b4429"/>
+              <path d="M-10 250C60 230 90 280 160 270S200 330 170 400H-10Z" fill="#1b4429"/>
+              <g fill="none" stroke="#f4b942" stroke-linecap="round">
+                <path d="M-10 300C120 280 160 210 260 196S420 130 500 96" stroke-width="11" stroke-opacity=".55"/>
+                <path d="M-10 300C120 280 160 210 260 196S420 130 500 96" stroke-width="2" stroke-dasharray="10 12" stroke="#12301f"/>
+                <path d="M120 -10C140 80 180 120 214 204" stroke-width="5" stroke-opacity=".35"/>
+                <path d="M300 190C318 250 360 290 380 370" stroke-width="5" stroke-opacity=".35"/>
+                <path d="M30 140C100 150 150 140 214 204" stroke-width="3" stroke-opacity=".3"/>
+                <path d="M300 190C380 200 430 230 490 220" stroke-width="3" stroke-opacity=".3"/>
+              </g>
+              <ellipse class="peta-riak" cx="300" cy="204" rx="26" ry="9" fill="none" stroke="#ffd98a" stroke-width="2"/>
+              <ellipse cx="300" cy="204" rx="14" ry="5" fill="#000" fill-opacity=".35"/>
+              <path d="M300 204C278 176 262 160 262 138A38 38 0 0 1 338 138C338 160 322 176 300 204Z" fill="#f4b942"/>
+              <circle cx="300" cy="138" r="14" fill="#12301f"/>
+            </svg>
+          </div></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAK ===================== -->
+    <section class="kontak" id="kontak" aria-labelledby="judul-kontak">
+      <div class="wrap kontak-isi">
+        <h2 id="judul-kontak">Pesan lewat WhatsApp</h2>
+        <p>Kirim pesan untuk memesan atau bertanya soal menu. Anda juga bisa menyusun pesanan lebih dulu di daftar menu, lalu mengirimnya sekali jalan.</p>
+        <p class="wa-nomor" data-wa-teks></p>
+        <a class="btn btn-wa btn-besar" data-wa href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.3 2.8 2.7 5.3 5.8 6.2l1.4-1.6-2-1.1-1 .7c-.9-.4-1.6-1.1-2-2l.8-.9-1-2Z" fill="currentColor"/></svg>
+          Chat WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="tumpal" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <div class="wrap footer-isi">
+      <div>
+        <p class="footer-nama">Saung The Last End</p>
+        <p class="footer-tag">Cita Rasa Khas Lampung, Nikmat Bersama Keluarga</p>
+      </div>
+      <nav aria-label="Navigasi footer">
+        <a href="#tentang">Tentang</a>
+        <a href="#andalan">Andalan</a>
+        <a href="#menu">Menu</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+    <p class="footer-hak">&copy; <span id="tahun">2026</span> Saung The Last End. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- ===================== BAR PESANAN ===================== -->
+  <button class="orderbar" id="orderBar" type="button" hidden aria-haspopup="dialog">
+    <span class="orderbar-ikon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 10V7a3 3 0 0 1 6 0v3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+      <span class="orderbar-jumlah" id="barJumlah">0</span>
+    </span>
+    <span class="orderbar-teks">
+      <span class="orderbar-label">Pesanan Anda</span>
+      <span class="orderbar-total" id="barTotal">Rp0</span>
+    </span>
+    <span class="orderbar-aksi">Lihat</span>
+  </button>
+
+  <!-- ===================== LACI PESANAN ===================== -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sheetJudul">
+    <form method="dialog" class="sheet-kepala">
+      <h2 id="sheetJudul">Pesanan Anda</h2>
+      <button class="sheet-tutup" type="submit" aria-label="Tutup pesanan">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+
+    <div class="sheet-badan">
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="cart-kosong" id="cartKosong">Belum ada menu. Tekan tombol + di daftar menu untuk menambah pesanan.</p>
+
+      <div class="isian">
+        <label for="fNama">Nama pemesan</label>
+        <input id="fNama" type="text" autocomplete="name" placeholder="Contoh: Budi">
+        <label for="fCatatan">Catatan</label>
+        <textarea id="fCatatan" rows="2" placeholder="Contoh: sambal dipisah, tidak pedas"></textarea>
+      </div>
+    </div>
+
+    <div class="sheet-kaki">
+      <div class="total-baris"><span>Total</span><strong id="sheetTotal">Rp0</strong></div>
+      <a class="btn btn-wa btn-besar" id="kirimWa" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.3 2.8 2.7 5.3 5.8 6.2l1.4-1.6-2-1.1-1 .7c-.9-.4-1.6-1.1-2-2l.8-.9-1-2Z" fill="currentColor"/></svg>
+        Kirim pesanan lewat WhatsApp
+      </a>
+      <button class="tombol-teks" type="button" id="kosongkan">Kosongkan pesanan</button>
+      <p class="catatan">Pesanan dikirim sebagai pesan WhatsApp. Pihak saung akan mengonfirmasi ketersediaan menu dan total akhir.</p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
